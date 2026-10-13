@@ -159,7 +159,7 @@
 .signature-band h2 { font-size: clamp(30px, 4.5vw, 48px); margin: 18px 0; }
 .signature-band p { color: color-mix(in oklch, var(--on-image) 70%, transparent); font-size: 13px; line-height: 2; margin: 0 auto 26px; max-width: 520px; }
 
-.velora-brand-mark { font-family: var(--font-display); color: var(--gold); font-size: 30px; height: 27px; }
+.velora-brand-mark { height: 44px; width: 44px; object-fit: contain; margin-bottom: 6px; }
 .velora-brand-name { font-family: var(--font-display); font-size: 22px; margin-top: 6px; letter-spacing: 2px; }
 .velora-brand-caption { font-size: 7px; letter-spacing: 3px; margin-top: 6px; }
 .velora-nav { display: flex; align-items: center; gap: clamp(16px, 3vw, 30px); }
