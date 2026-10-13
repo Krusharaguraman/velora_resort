@@ -9,12 +9,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        resort: "resort-button",
-        coastal: "coastal-button",
-        editorial: "editorial-button",
-        hotel: "rounded-none bg-primary text-primary-foreground hover:bg-primary/85 h-12 px-6 text-[9px] tracking-[1.3px] font-semibold shadow-none",
-        image: "rounded-none text-on-image hover:bg-on-image/10",
-        imageOutline: "rounded-none border border-on-image/60 text-on-image hover:bg-on-image/10 h-12 px-7 text-[9px] tracking-[1.5px] font-medium",
+        luxury: "luxury-button bg-primary text-primary-foreground hover:bg-primary/90",
+        image: "luxury-button image-button",
+        gold: "luxury-button gold-button",
+        editorial: "text-button",
         default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:

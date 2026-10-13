@@ -9,9 +9,9 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the shared hotel navigation, footer, and reservation dialog in HotelShell at the root so every content page shares one booking entry point.
-- Use separate file routes for hotel content and ExperiencePage for consistent editorial detail layouts.
-- Keep visual tokens and reusable hotel layout styles in src/styles.css and interactive controls in the design-system Button.
-- The reservation interface is a presentation-only stay planner until a real reservation service is connected; never imply a confirmed booking or live availability.
-- Keep illustrative room specifications and rates in the shared hotel catalogue, used by both room listings and the stay planner so estimates cannot drift.
-- Use the shared stay calculation helper for date validation and multi-room nightly estimates; keep its concrete arithmetic tests alongside existing tests.
+## Website architecture
+- Keep shared navigation and footer in the root shell; each content page owns its route and metadata so navigation remains consistent and every page is independently discoverable.
+- Keep shared resort copy and media references in the browser-safe resort-content module; reusable resort sections live in the resort component module to avoid page duplication.
+- Keep extended guest-content sections in resort-chapters, independent of the shared shell module, so rich page-specific content can grow without circular imports.
+- Represent this unverified property as a concept resort; stay search creates inspirations and downloadable plans, not live availability or confirmed reservations.
+- Express visual styling through semantic tokens and centralized styles, with hospitality-specific Button variants, to preserve a consistent luxury identity.
